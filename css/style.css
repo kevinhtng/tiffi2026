@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 15px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.small-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    font-size: 0.8em;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.small-btn:hover {
+    opacity: 1;
+}
+
+.image-placeholder {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+}
+
+.meme-image {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.meme-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.itinerary {
+    text-align: left;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+.itinerary h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.itinerary-section {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 2px solid #fff;
+}
+
+.disclaimer {
+    font-size: 0.95em;
+    font-style: italic;
+    opacity: 0.8;
+    margin: 30px 0;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+.hope-text {
+    font-size: 0.85em;
+    font-style: italic;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.room-option {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.room-option:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.note {
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.general-note {
+    font-size: 0.9em;
+    font-style: italic;
+    opacity: 0.7;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    border: 2px solid #fff;
+}
+
+.close-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    h1 { 
+        font-size: 1.8em; 
+    }
+    h2 { 
+        font-size: 1.5em; 
+    }
+    p { 
+        font-size: 1em; 
+    }
+    button { 
+        padding: 12px 30px; 
+        font-size: 1em; 
+    }
+}
