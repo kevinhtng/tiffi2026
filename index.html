@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiffi2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Page 1: Initial Question -->
+    <div class="page active" id="page1">
+        <h1>Hi Tiffi, my little kitty.</h1>
+        <p>Are you free this Valentine's Day?</p>
+        <button onclick="showPage('page2')">yes</button>
+        <button onclick="showPage('pageNo')">no</button>
+        <button class="small-btn" onclick="showPage('pagePlans')">big brain only</button>
+    </div>
+
+    <!-- Page No: Not Free -->
+    <div class="page" id="pageNo">
+        <h2>well you better cancel those plans and be free</h2>
+        <button onclick="showPage('page1')">go back</button>
+    </div>
+
+    <!-- Page 2: Partner in Crime -->
+    <div class="page" id="page2">
+        <h2>will you let me be your partner in crime this valentine's day so we can be the reason a couple breaks up together?</h2>
+        <button onclick="showPage('page3')">yes</button>
+        <button onclick="showPage('pageSad')">no</button>
+    </div>
+
+    <!-- Page Sad: Rejection -->
+    <div class="page" id="pageSad">
+        <h2>aww, okay.</h2>
+        <div class="image-placeholder">
+            <img src="images/sad-image.jpg" alt="sad">
+        </div>
+        <button onclick="showPage('page1')">start over</button>
+    </div>
+
+    <!-- Page 3: Excited -->
+    <div class="page" id="page3">
+        <h1>Yayyy!!!!</h1>
+        <p>That's a good girl.</p>
+        <h2>Here's the plan!</h2>
+        <div class="meme-image">
+            <img src="images/your-meme-image.jpg" alt="excited meme">
+        </div>
+        <p>(I'm excited to get to spend Valentine's with you)</p>
+        <button onclick="showPage('pagePlans')">Ready for our adventure?</button>
+    </div>
+
+    <!-- Page Plans: Itinerary -->
+    <div class="page" id="pagePlans">
+        <p class="hope-text">i hope you clicked yes because you wanted to do this with me and not just because you are being nice</p>
+        
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> I have not booked anything yet, so if you'd like to stay longer we can. I just thought you wanted to get back to work ASAP.
+        </div>
+
+        <div class="itinerary">
+            <h3>✈ FRIDAY, FEBRUARY 13, 2026</h3>
+            <div class="itinerary-section">
+                <p>Flying to Denver, Colorado around 8:23PM</p>
+                <p>Arriving in Denver, Colorado around 10:09PM</p>
+                <p>Checking in at <a href="https://theblocksilverthorne.com/" target="_blank">The Block Silverthorne</a></p>
+                <p><strong>Room Options:</strong></p>
+                <div class="room-option" onclick="openModal('images/Queen.png')">Queen Bed Room</div>
+                <div class="room-option" onclick="openModal('images/King.png')">King Bed Room with Balcony (+$200, we can lay there and watch the stars if you're not too cold from the day)</div>
+            </div>
+
+            <h3>❄ SATURDAY, FEBRUARY 14, 2026</h3>
+            <div class="itinerary-section">
+                <p>Skiing or snowboarding at <a href="https://skiloveland.com/" target="_blank">Ski Loveland</a></p>
+                <p>Full day of lessons (or half day if available—depends on availability)</p>
+            </div>
+
+            <h3>⛷ SUNDAY, FEBRUARY 15, 2026</h3>
+            <div class="itinerary-section">
+                <p>Back to the slopes on our own so we can see who's better hahaha</p>
+            </div>
+
+            <h3>🏔 MONDAY, FEBRUARY 16, 2026</h3>
+            <div class="itinerary-section">
+                <p>Explore Silverthorne or Denver</p>
+                <p>Flying out Monday night around 8:33PM</p>
+                <p>Arriving back in Houston around 11:59PM</p>
+            </div>
+
+            <p class="general-note">** we need to find more places, i couldn't find much **</p>
+
+            <h3>🍽 FOOD SPOTS</h3>
+            <div class="itinerary-section">
+                <p>• <a href="https://bluebirdmarket.co/eatdrink/" target="_blank">Bluebird Market</a></p>
+                <p>• <a href="https://timberlinecraftkitchen.com/" target="_blank">Timberline Craft Kitchen</a></p>
+            </div>
+
+            <h3>🎨 ACTIVITIES</h3>
+            <div class="itinerary-section">
+                <p>• <a href="https://www.artspotsilverthorne.org/home-artcenter" target="_blank">ArtSpot Silverthorne</a></p>
+            </div>
+        </div>
+
+        <button onclick="showPage('page1')" style="margin-top: 40px;">back to start</button>
+    </div>
+
+    <!-- Modal for room images -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="close-modal" onclick="closeModal()">close</button>
+            <img id="modalImage" src="" alt="Room">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
