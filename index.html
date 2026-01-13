@@ -45,16 +45,18 @@
     <div class="page" id="page3">
         <h1>Yayyy!!!!</h1>
         <p>That's a good girl.</p>
-        <p>I'm excited to get to spend Valentine's with you!</p>
+        <h2>Here's the plan!</h2>
         <div class="meme-image">
             <img src="images/happy.jpeg" alt="excited meme">
         </div>
-        <p>(Is there a plan on the next page or not? Hmmm..)</p>
+        <p>(I'm excited to get to spend Valentine's with you)</p>
         <button onclick="showPage('pagePlans')">Ready for our adventure?</button>
     </div>
 
     <!-- Page Plans: Itinerary -->
     <div class="page" id="pagePlans">
+        <button class="love-btn" onclick="showPage('pageLetter')">love</button>
+        
         <p class="hope-text">i hope you clicked yes because you wanted to do this with me and not just because you are being nice</p>
         
         <div class="disclaimer">
@@ -90,6 +92,10 @@
                 <p>Arriving back in Houston around 11:59PM</p>
             </div>
 
+            <p class="general-note">** we need to find more places, i couldn't find much **</p>
+
+            <h3>🍽 FOOD SPOTS</h3>
+            <div class="itinerary-section">
             <p class="general-note">** we can find more places, i couldn't find much **</p>
 
             <h3>🍽 FOOD SPOTS</h3>
@@ -115,6 +121,45 @@
         </div>
 
         <button onclick="showPage('page1')" style="margin-top: 40px;">back to start</button>
+    </div>
+            </div>
+
+            <h3>🎨 ACTIVITIES</h3>
+            <div class="itinerary-section">
+                <p>• <a href="https://www.artspotsilverthorne.org/home-artcenter" target="_blank">ArtSpot Silverthorne</a></p>
+            </div>
+        </div>
+
+        <button onclick="showPage('page1')" style="margin-top: 40px;">back to start</button>
+    </div>
+
+    <!-- Page Letter: Love Note -->
+    <div class="page" id="pageLetter">
+        <div class="letter-container">
+            <div class="letter-content">
+                <p class="letter-text">
+                    Hi Tiffi,
+                </p>
+                <p class="letter-text">
+                    From the moment I met you, I knew you were different—even if it's a scary different. Not scary because you're horrific, but because of the confidence you carry. Although it took some time to get you to be interested in me, it was worth it in the end.
+                </p>
+                <p class="letter-text">
+                    I know very well that you can take care of yourself, but for some reason I am drawn to take care of you. I want you to feel safe and cared for in my arms. Maybe it's because I see you work hard all the time—I want to be the reason you can ease yourself.
+                </p>
+                <p class="letter-text">
+                    I wish we could be together for a long long time, but I understand what you want, and although it hurts, you deserve the best. I know you said Valentine's Day is just a random day and you don't care about it, but I hope I can make you feel special by doing this.
+                </p>
+                <p class="letter-text">
+                    You've told me about your past experiences and I know damn well a lot of guys can/would do this for you and even better, so hopefully somehow you remember this 5, 10, or however many years from now. Let's enjoy our time together while we can.
+                </p>
+                <p class="letter-text letter-signature">
+                    Happy Valentine's Day, love.
+                    <br><br>
+                    Kevin
+                </p>
+            </div>
+        </div>
+        <button onclick="showPage('pagePlans')" style="margin-top: 40px;">back to plans</button>
     </div>
 
     <!-- Modal for room images -->
