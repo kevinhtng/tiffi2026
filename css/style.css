@@ -148,14 +148,19 @@ button:hover {
 }
 
 .room-option {
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 15px;
     border: 1px solid #fff;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
+    display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
+    min-height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .room-option:hover {
