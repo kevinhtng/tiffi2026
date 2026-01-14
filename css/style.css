@@ -93,14 +93,11 @@ button:hover {
 }
 
 .love-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
     padding: 8px 20px;
     font-size: 0.85em;
     opacity: 0.7;
     transition: opacity 0.3s ease;
-    z-index: 100;
+    margin-right: 10px;
 }
 
 .love-btn:hover {
@@ -217,31 +214,56 @@ a:hover {
 }
 
 .letter-container {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
-    padding: 40px;
-    background-color: #1a1a1a;
-    border: 1px solid #333;
-    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    padding: 60px 50px;
+    background: linear-gradient(to bottom, #f4f1e8 0%, #e8e3d3 100%);
+    border: 1px solid #8b7355;
+    box-shadow: 
+        0 2px 10px rgba(0, 0, 0, 0.3),
+        inset 0 0 100px rgba(139, 115, 85, 0.1);
+    position: relative;
+}
+
+.letter-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 31px,
+            rgba(139, 115, 85, 0.15) 31px,
+            rgba(139, 115, 85, 0.15) 32px
+        );
+    pointer-events: none;
 }
 
 .letter-content {
     text-align: left;
+    position: relative;
+    z-index: 1;
 }
 
 .letter-text {
-    font-family: 'Courier New', monospace;
-    font-size: 1em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #e0e0e0;
-    letter-spacing: 0.3px;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+    font-size: 1.3em;
+    line-height: 2;
+    margin-bottom: 25px;
+    color: #2c2416;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
 .letter-signature {
     text-align: right;
     font-style: italic;
-    margin-top: 30px;
+    margin-top: 40px;
+    font-size: 1.4em;
 }
 
 .modal {
