@@ -217,12 +217,17 @@ a:hover {
     max-width: 650px;
     margin: 0 auto;
     padding: 60px 50px;
-    background: linear-gradient(to bottom, #f4f1e8 0%, #e8e3d3 100%);
-    border: 1px solid #8b7355;
+    background: 
+        radial-gradient(ellipse at 20% 30%, rgba(101, 67, 33, 0.3) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(101, 67, 33, 0.25) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 90%, rgba(101, 67, 33, 0.2) 0%, transparent 40%),
+        linear-gradient(to bottom, #d4c4a8 0%, #c9b896 50%, #b8a889 100%);
+    border: 2px solid #7a5c3d;
     box-shadow: 
-        0 2px 10px rgba(0, 0, 0, 0.3),
-        inset 0 0 100px rgba(139, 115, 85, 0.1);
+        0 4px 20px rgba(0, 0, 0, 0.5),
+        inset 0 0 60px rgba(101, 67, 33, 0.15);
     position: relative;
+    border-radius: 2px;
 }
 
 .letter-container::before {
@@ -233,12 +238,29 @@ a:hover {
     right: 0;
     bottom: 0;
     background-image: 
+        radial-gradient(circle at 15% 20%, rgba(60, 40, 20, 0.4) 0%, transparent 3%),
+        radial-gradient(circle at 85% 15%, rgba(60, 40, 20, 0.3) 0%, transparent 4%),
+        radial-gradient(circle at 70% 80%, rgba(60, 40, 20, 0.35) 0%, transparent 5%),
+        radial-gradient(circle at 30% 75%, rgba(60, 40, 20, 0.25) 0%, transparent 3%),
+        radial-gradient(circle at 90% 60%, rgba(60, 40, 20, 0.3) 0%, transparent 4%);
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.letter-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
         repeating-linear-gradient(
             0deg,
             transparent,
-            transparent 31px,
-            rgba(139, 115, 85, 0.15) 31px,
-            rgba(139, 115, 85, 0.15) 32px
+            transparent 2px,
+            rgba(101, 67, 33, 0.03) 2px,
+            rgba(101, 67, 33, 0.03) 4px
         );
     pointer-events: none;
 }
@@ -250,20 +272,22 @@ a:hover {
 }
 
 .letter-text {
-    font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-    font-size: 1.3em;
-    line-height: 2;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', 'Bradley Hand', cursive;
+    font-size: 1.2em;
+    line-height: 1.9;
     margin-bottom: 25px;
-    color: #2c2416;
-    letter-spacing: 0.5px;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
+    color: #2b4f7e;
+    letter-spacing: 0.3px;
+    opacity: 0.85;
 }
 
 .letter-signature {
     text-align: right;
     font-style: italic;
     margin-top: 40px;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    color: #2b4f7e;
+    opacity: 0.85;
 }
 
 .modal {
