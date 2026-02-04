@@ -21,7 +21,7 @@
     <div class="page" id="pageNo">
         <h2>well you better cancel those plans and be free</h2>
         <div class="meme-image">
-            <img src="images/threat.png" alt="threat">
+            <img src="images/threat.jpeg" alt="threat">
         </div>
         <button onclick="showPage('page1')">go back</button>
     </div>
@@ -37,7 +37,7 @@
     <div class="page" id="pageSad">
         <h2>aww, okay.</h2>
         <div class="image-placeholder">
-            <img src="images/sad.png" alt="sad">
+            <img src="images/sad.jpeg" alt="sad">
         </div>
         <button onclick="showPage('page1')">start over</button>
     </div>
@@ -48,7 +48,7 @@
         <p>That's a good girl.</p>
         <p class="excited-text">I'm excited to get to spend Valentine's with you!</p>
         <div class="meme-image">
-            <img src="images/happy.png" alt="excited meme">
+            <img src="images/happy.jpeg" alt="excited meme">
         </div>
         <p>(Is there a plan on the next page or not? Hmmm..)</p>
         <button onclick="showPage('pagePlans')">Ready for our adventure?</button>
@@ -116,8 +116,64 @@
         </div>
 
         <button class="love-btn" onclick="showPage('pageLetter')">love</button>
+        <button class="love-btn" onclick="showPage('pageAmour')">amour</button>
         <button onclick="showPage('page1')" style="margin-top: 40px;">back to start</button>
         <button class="love-btn" onclick="showPage('pageAlternative')">like</button>
+    </div>
+
+    <!-- Page Amour: Actual Valentine's Plans -->
+    <div class="page" id="pageAmour">
+        <h1>Valentines 2026</h1>
+        
+        <div class="itinerary">
+            <h3>💕 FRIDAY, FEBRUARY 13TH</h3>
+            <div class="itinerary-section">
+                <p>• If you finish work early, I'll leave 1-2 hrs early & pick you up then drive to Dallas</p>
+                <p>• Arrive in Dallas, check-in Airbnb ($1,399.37) then grab some food to bring back or get food before</p>
+            </div>
+
+            <h3>💕 SATURDAY, FEBRUARY 14TH</h3>
+            <div class="itinerary-section">
+                <p>• I wake up early & grab you breakfast so you don't get hangry while we bake</p>
+                <p>• <strong>Macarons Cooking Class</strong> (9:00am-11:00am) ($207.98) - Southlake</p>
+                <p>• <strong>Johnathon's Chicken & Waffles</strong> OR <strong>Maple Leaf's Chicken & Waffles</strong> Brunch</p>
+                <p>• Go back to the crib & relax or shopping/Thrift City in Richardson (clothes)/Casa View Thrift (furniture)</p>
+                <p>• <strong>Hot Air Balloon</strong> (3:15pm-6:45pm) ($1,266.70) - McKinney</p>
+                <p>• <strong>Dozo Omakase Dinner</strong> (8:00pm) ($300+)</p>
+                <p>• Braum's Ice cream</p>
+                <p>• Chill at Airbnb & do funtivities - not sus</p>
+            </div>
+
+            <h3>💕 SUNDAY, FEBRUARY 15TH</h3>
+            <div class="itinerary-section">
+                <p>• <strong>Surprise...</strong> (8:00am-10:30am)</p>
+                <p>• <strong>Tuft Rugs</strong> for your bathroom? Or some art that we can take home as memory? (11:30am-3:30pm) ($200)</p>
+                <p>• Grab lunch - any spot you're craving atm</p>
+                <p>• <strong>K1 Speed Go-Kart</strong> - Richardson (5:00pm-6:00pm) ($120)</p>
+                <p>• <strong>Dakota's Steakhouse</strong> (7:45pm) ($300+)</p>
+                <p>• Braum's Ice cream/Any place after</p>
+                <p>• Head back to Houston any time (I'll put checkout Monday so we can leave our stuff @ the house)</p>
+            </div>
+
+            <h3>💰 ESTIMATED TOTAL COST</h3>
+            <div class="itinerary-section">
+                <p><strong>$4,129.05</strong></p>
+                <p class="note">Optional: outdoor go karting</p>
+            </div>
+
+            <h3>📍 ADDRESSES</h3>
+            <div class="itinerary-section">
+                <p>• <strong>Airbnb</strong> - Surprise. To be released.</p>
+                <p>• <strong>Macarons D'Amour</strong> - 1151 E Southlake Blvd, Suite 340, TX, 76092, Southlake</p>
+                <p>• <strong>Rohr Hot Air Balloon</strong> - 1985 N Central Expy, Allen, TX 75013</p>
+                <p>• <strong>Dozo Omakase</strong> - 3011 Gulden Ln #109, Dallas, TX 75212</p>
+                <p>• <strong>Tutugether Dallas</strong> - 2225 Old Denton Rd STE 120, Carrollton, TX 75006</p>
+                <p>• <strong>K1 Speed Go Kart</strong> - 677 W Campbell Rd, Richardson, TX 75080</p>
+                <p>• <strong>Dakota's Steakhouse</strong> - 600 N Akard St, Dallas, TX 75201</p>
+            </div>
+        </div>
+
+        <button onclick="showPage('pagePlans')" style="margin-top: 40px;">back to plans</button>
     </div>
 
     <!-- Page Letter: Love Note -->
